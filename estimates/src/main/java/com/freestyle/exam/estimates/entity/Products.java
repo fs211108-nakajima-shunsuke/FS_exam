@@ -14,8 +14,8 @@ import lombok.Data;
 @Data
 public class Products {
     @Id
-    //@GeneratedValue
     @Column(name = "cd")
+    @GeneratedValue
     private int cd;
 
     @Column(name = "name")

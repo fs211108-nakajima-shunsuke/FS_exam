@@ -23,8 +23,9 @@ public class EstimatesController {
     @GetMapping("api/v1/estimates")
     public String showEstimates() {
         List<Estimates> estimatesList = estimatesRepository.findAll();
-        System.out.println(estimatesList.get(1).getName());
-
-        return "test";
+        
+        String hoge = estimatesList.get(1).getName();
+        System.out.println(hoge);
+        return hoge;
     }
 }

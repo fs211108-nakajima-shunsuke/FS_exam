@@ -11,7 +11,7 @@ export default {
     };
   },
   mounted() {
-    fetch("/api/v1/estimates")
+    fetch("/api/v1/employees")
       .then((response) => response.text())
       .then((data) => {
         this.msg = data;

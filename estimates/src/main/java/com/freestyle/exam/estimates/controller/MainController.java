@@ -14,7 +14,5 @@ public class MainController {
     @RequestMapping("/estimates")
     public String get(){
         return "searchEstimate";
-    }
-
-    
+    } 
 }
